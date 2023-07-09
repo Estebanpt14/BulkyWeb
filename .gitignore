@@ -1,0 +1,11 @@
+bin/
+
+published/
+
+.vscode/
+
+.idea/
+
+*.mp4
+*.jpeg
+*.png

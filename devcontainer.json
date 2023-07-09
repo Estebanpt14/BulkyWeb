@@ -1,0 +1,12 @@
+{
+  "name": "ASP.NET Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "nombre_del_servicio",
+  "workspaceFolder": "/app",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-dotnettools.csharp"
+  ]
+}
