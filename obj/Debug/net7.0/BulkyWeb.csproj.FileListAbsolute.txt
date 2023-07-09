@@ -29,3 +29,9 @@
 /home/esteban/Documents/cs/BulkyWeb/obj/Debug/net7.0/BulkyWeb.pdb
 /home/esteban/Documents/cs/BulkyWeb/obj/Debug/net7.0/BulkyWeb.genruntimeconfig.cache
 /home/esteban/Documents/cs/BulkyWeb/obj/Debug/net7.0/ref/BulkyWeb.dll
+/home/esteban/Documents/cs/BulkyWeb/bin/Debug/net7.0/published/web.config
+/home/esteban/Documents/cs/BulkyWeb/bin/Debug/net7.0/devcontainer.json
+/home/esteban/Documents/cs/BulkyWeb/bin/Debug/net7.0/published/appsettings.Development.json
+/home/esteban/Documents/cs/BulkyWeb/bin/Debug/net7.0/published/appsettings.json
+/home/esteban/Documents/cs/BulkyWeb/bin/Debug/net7.0/published/BulkyWeb.deps.json
+/home/esteban/Documents/cs/BulkyWeb/bin/Debug/net7.0/published/BulkyWeb.runtimeconfig.json
