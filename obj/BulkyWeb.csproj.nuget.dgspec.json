@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/esteban/Documents/cs/BulkyWeb/BulkyWeb.csproj",
         "projectName": "BulkyWeb",
         "projectPath": "/home/esteban/Documents/cs/BulkyWeb/BulkyWeb.csproj",
-        "packagesPath": "/home/esteban/.nuget/packages/",
+        "packagesPath": "/root/.nuget/packages/",
         "outputPath": "/home/esteban/Documents/cs/BulkyWeb/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/esteban/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -37,6 +37,26 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.23280.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0-preview.5.23280.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": {
+              "target": "Package",
+              "version": "[8.0.0-preview.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime": {
+              "target": "Package",
+              "version": "[8.0.0-preview.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
