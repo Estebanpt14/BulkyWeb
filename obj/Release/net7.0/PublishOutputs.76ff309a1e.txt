@@ -1,7 +1,0 @@
-/home/esteban/Documents/cs/BulkyWeb/published/BulkyWeb
-/home/esteban/Documents/cs/BulkyWeb/published/appsettings.Development.json
-/home/esteban/Documents/cs/BulkyWeb/published/appsettings.json
-/home/esteban/Documents/cs/BulkyWeb/published/BulkyWeb.dll
-/home/esteban/Documents/cs/BulkyWeb/published/BulkyWeb.deps.json
-/home/esteban/Documents/cs/BulkyWeb/published/BulkyWeb.runtimeconfig.json
-/home/esteban/Documents/cs/BulkyWeb/published/BulkyWeb.pdb

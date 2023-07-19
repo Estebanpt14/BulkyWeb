@@ -1,10 +1,10 @@
-bin/
+BulkyWeb/bin/
+BulkyWeb/obj/
+BulkyWeb/published/
 
-published/
+BulkyWeb/.vscode/
 
-.vscode/
-
-.idea/
+BulkyWeb/.idea/
 
 *.mp4
 *.jpeg
