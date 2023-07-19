@@ -1,6 +1,6 @@
-BulkyWeb/bin/
-BulkyWeb/obj/
-BulkyWeb/published/
+obj/
+bin/
+published/
 
 BulkyWeb/.vscode/
 
