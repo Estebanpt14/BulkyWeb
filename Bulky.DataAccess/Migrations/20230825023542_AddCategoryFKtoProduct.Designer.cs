@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Bulky.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230824025556_AddProductTableAndSeed")]
-    partial class AddProductTableAndSeed
+    [Migration("20230825023542_AddCategoryFKtoProduct")]
+    partial class AddCategoryFKtoProduct
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -77,6 +77,9 @@ namespace Bulky.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
@@ -104,6 +107,8 @@ namespace Bulky.DataAccess.Migrations
 
                     b.HasKey("ProductId");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Products");
 
                     b.HasData(
@@ -111,6 +116,7 @@ namespace Bulky.DataAccess.Migrations
                         {
                             ProductId = 1,
                             Author = "Agatha Cristie",
+                            CategoryId = 3,
                             Description = "Libro sobre ella",
                             ISBN = "C928341",
                             ListPrice = 100000.0,
@@ -123,6 +129,7 @@ namespace Bulky.DataAccess.Migrations
                         {
                             ProductId = 2,
                             Author = "Agatha Cristie",
+                            CategoryId = 3,
                             Description = "Libro sobre el",
                             ISBN = "C928342",
                             ListPrice = 110000.0,
@@ -135,6 +142,7 @@ namespace Bulky.DataAccess.Migrations
                         {
                             ProductId = 3,
                             Author = "Agatha Cristie",
+                            CategoryId = 2,
                             Description = "Wasd",
                             ISBN = "C928343",
                             ListPrice = 1100.0,
@@ -143,6 +151,17 @@ namespace Bulky.DataAccess.Migrations
                             Price50 = 983.0,
                             Title = "Prueba"
                         });
+                });
+
+            modelBuilder.Entity("Bulky.Models.Product", b =>
+                {
+                    b.HasOne("Bulky.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

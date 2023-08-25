@@ -1,10 +1,11 @@
 obj/
 bin/
 published/
+wwwroot/
 
-BulkyWeb/.vscode/
+.vscode/
 
-BulkyWeb/.idea/
+.idea/
 
 *.mp4
 *.jpeg
