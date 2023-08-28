@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/BulkyWeb/BulkyWeb.csproj",
+        "${workspaceFolder}/BulkyWeb.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/BulkyWeb/BulkyWeb.csproj",
+        "${workspaceFolder}/BulkyWeb.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -33,7 +33,7 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}/BulkyWeb/BulkyWeb.csproj"
+        "${workspaceFolder}/BulkyWeb.csproj"
       ],
       "problemMatcher": "$msCompile"
     }
